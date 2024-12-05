@@ -1,0 +1,70 @@
+body {
+  font-family: 'Poiret One', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.app-container {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  background-color: #4c8bf5;
+  color: white;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  margin: 20px 0;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#forecast-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.forecast-day {
+  background-color: #e6f7ff;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body.dark-mode .forecast-day {
+  background-color: #333;
+}

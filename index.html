@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bennu Weather Forecast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+</head>
+<body>
+  <div class="app-container" id="app-container">
+    <header>
+      <h1>Bennu Weather Forecast</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Aujourd'hui & Demain</a></li>
+          <li><a href="forecast-7-days.html">7 prochains jours</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section Météo Actuelle -->
+      <section id="current-weather">
+        <h2><i class="wi wi-cloudy"></i> Météo Actuelle</h2>
+        <div class="weather-details">
+          <p><i class="wi wi-day-sunny"></i> <span id="current-temp">--°C</span></p>
+          <p id="location">Localisation : <strong>...</strong> S</p>
+        </div>
+      </section>
+
+      <!-- Prévisions -->
+      <section id="forecast">
+        <h2><i class="wi wi-forecast-io-partly-cloudy-day"></i> Prévisions pour Aujourd'hui et Demain</h2>
+        <div id="forecast-container">
+          <p>Les prévisions météo apparaîtront ici une fois disponibles.</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
